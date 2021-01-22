@@ -11,22 +11,23 @@ logging.basicConfig(
     level="NOTSET",
     format="%(name)s - %(message)s",
     datefmt="[%X]",
-    handlers=[RichHandler(rich_tracebacks=True)]
+    handlers=[RichHandler(rich_tracebacks=True)],
 )
 
 
 @app.command()
 def make_dataset(
-        input_filepath: Path,
-        output_filepath: Path,
+    input_filepath: Path,
+    output_filepath: Path,
 ):
-    """ Runs data processing scripts to turn raw data from (../raw) into
-        cleaned data ready to be analyzed (saved in ../processed).
+    """Runs data processing scripts to turn raw data from (../raw) into
+    cleaned data ready to be analyzed (saved in ../processed).
     """
     logger = logging.getLogger(__name__)
-    logger.info('making final data set from raw data')
+    logger.info("making final data set from raw data")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     # not used in this stub but often useful for finding various files
     project_dir = Path(__file__).resolve().parents[2]
 
