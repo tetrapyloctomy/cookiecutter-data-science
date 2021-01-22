@@ -173,8 +173,6 @@ else
 	conda create --name $(PROJECT_NAME) python=2.7
 endif
 		@echo ">>> New conda env created. Activate with:\nsource activate $(PROJECT_NAME)"
-		@echo ">>> Initializing git repo"
-		git init
 else
 	$(PYTHON_INTERPRETER) -m pip install -q virtualenv virtualenvwrapper
 	@echo ">>> Installing virtualenvwrapper if not already installed.\nMake sure the following lines are in shell startup file\n\
