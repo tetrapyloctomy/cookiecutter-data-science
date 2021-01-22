@@ -1,7 +1,7 @@
-# -*- coding: utf-8 -*-
-import typer
 import logging
 from pathlib import Path
+
+import typer
 from dotenv import find_dotenv, load_dotenv
 from rich.logging import RichHandler
 
