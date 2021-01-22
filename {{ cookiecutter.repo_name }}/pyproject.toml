@@ -5,7 +5,7 @@ build-backend = "poetry.masonry.api"
 [tool.poetry]
 name = "{{ cookiecutter.project_name }}"
 version = "0.1.0"
-description = "{{ cookiecutter.project_description }}"
+description = "{{ cookiecutter.description }}"
 readme = "README.md"
 authors = [
   "{{ cookiecutter.author_name }} <{{ cookiecutter.email }}>"
@@ -15,6 +15,7 @@ authors = [
 python = "^{{ cookiecutter.python_version }}"
 typer = {extras = ["all"], version = "^0.3.2"}
 rich = "^9.8.2"
+python-dotenv = "^0.5.1"
 
 [tool.poetry.dev-dependencies]
 darglint = "^1.5.8"
