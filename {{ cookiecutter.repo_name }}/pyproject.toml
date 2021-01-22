@@ -30,7 +30,7 @@ pylint = "^2.6.0"
 pydocstyle = "^5.1.1"
 pre-commit = "^2.9.3"
 ipython = "^7.19.0"
-ptpyton = "^3.0.10"
+ptpython = "^3.0.10"
 
 [tool.black]
 # https://github.com/psf/black
