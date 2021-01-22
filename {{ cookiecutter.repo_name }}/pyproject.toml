@@ -31,6 +31,7 @@ pydocstyle = "^5.1.1"
 pre-commit = "^2.9.3"
 ipython = "^7.19.0"
 ptpython = "^3.0.10"
+portray = "^1.5.0"
 
 [tool.black]
 # https://github.com/psf/black
@@ -47,4 +48,11 @@ multi_line_output = 3
 indent = 4
 force_grid_wrap = 0
 use_parentheses = true
-line_length = 80
+line_length = 88
+
+[tool.portray]
+output_dir = "docs"
+
+[tool.portray.mkdocs.theme]
+name = "material"
+palette = {primary = "pink", accent = "cyan", scheme = "slate"}
