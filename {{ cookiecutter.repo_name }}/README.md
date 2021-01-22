@@ -57,4 +57,4 @@ Project Organization
 
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small> as well as <a target="_blank" href="https://github.com/TezRomacH/python-package-template/">TezRomacH's python-package-template.</p>
+<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small> as well as <a target="_blank" href="https://github.com/TezRomacH/python-package-template/">TezRomacH's python-package-template</p>.
