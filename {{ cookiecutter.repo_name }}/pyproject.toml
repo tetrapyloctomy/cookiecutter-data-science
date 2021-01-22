@@ -35,7 +35,7 @@ ptpython = "^3.0.10"
 [tool.black]
 # https://github.com/psf/black
 line-length = 88
-target-version = ["py{{ cookiecutter.python_version.replace('.', '') }}"]
+target-version = ["py38"]
 
 [tool.isort]
 # https://github.com/timothycrosley/isort/
