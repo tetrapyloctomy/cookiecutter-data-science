@@ -10,9 +10,6 @@ PROFILE = {{ cookiecutter.aws_profile }}
 PROJECT_NAME = {{ cookiecutter.repo_name }}
 PYTHON_INTERPRETER = {{ cookiecutter.python_interpreter }}
 
-SHELL=/bin/bash
-CONDA_ACTIVATE=source $$(conda info --base)/etc/profile.d/conda.sh ; conda activate ; conda activate
-
 ifeq (,$(shell which conda))
 HAS_CONDA=False
 else
@@ -176,8 +173,6 @@ else
 	conda create --name $(PROJECT_NAME) python=2.7
 endif
 		@echo ">>> New conda env created. Activate with:\nsource activate $(PROJECT_NAME)"
-		@echo ">>> Activating environment"
-		$(CONDA_ACTIVATE) $(PROJECT_NAME)
 		@echo ">>> Initializing git repo"
 		git init
 else
@@ -193,7 +188,7 @@ test-environment:
 	$(PYTHON_INTERPRETER) test_environment.py
 
 ## Sets up repo, poetry, pre-commit hooks, and conda environment
-init: create-environment download-poetry install
+init: download-poetry install
 
 #################################################################################
 # PROJECT RULES                                                                 #
