@@ -183,10 +183,6 @@ else
 	@echo ">>> New virtualenv created. Activate with:\nworkon $(PROJECT_NAME)"
 endif
 
-## Test python environment is setup correctly
-test-environment:
-	$(PYTHON_INTERPRETER) test_environment.py
-
 ## Sets up repo, poetry, pre-commit hooks, and conda environment
 init: download-poetry install
 
